@@ -11,8 +11,14 @@ export const GlobalStyle = createGlobalStyle`
 
    html, body {
      background-color: #f1f1f1ff;
-     overflow: hidden;
-     overflow-y: auto;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  #root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
 `
