@@ -11,14 +11,10 @@ export const GlobalStyle = createGlobalStyle`
 
    html, body {
      background-color: #f1f1f1ff;
-    min-height: 100vh;
     width: 100%;
+    overflow-x: hidden;
   }
 
-  #root {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+  
 
 `
