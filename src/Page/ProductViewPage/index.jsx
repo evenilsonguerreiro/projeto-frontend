@@ -6,7 +6,7 @@ import Star3 from "../../assets/imagens/Star3.png";
 import arrowleft from "../../assets/imagens/arrowleft.svg";
 import arrowright from "../../assets/imagens/arrowright.svg";
 import Layer1 from "../../assets/imagens/Layer1.png";
-import line from "../../assets/imagens/line.png"
+import Line from "../../assets/imagens/Line.png"
 import { Link } from "react-router-dom";
 
 const ProductViewPage = () => {
@@ -123,7 +123,7 @@ const ProductViewPage = () => {
                     <div className="cards-r">
                         <div className="relacionados-h" >
                         <h3>Produtos Relacionados</h3>
-                        <Link>Ver todos <img src={line} alt="" /></Link>
+                        <Link>Ver todos <img src={Line} alt="" /></Link>
                     </div>
                     <div className="grid-relacionados">
                         {produtosRelacionados.map((produto) => (
