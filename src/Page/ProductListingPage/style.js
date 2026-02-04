@@ -7,25 +7,25 @@ export const ContainerSection = styled.div`
    
 `
 export const ContainerSecPrincipal = styled.div`
-    max-width: 1400px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     gap: 20px;
-    padding-top: 200px;
+    padding: 60px 20px;
 
     
     
 `
 
 export const ContainerHeader = styled.div`
-    width: 1400px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     justify-content:space-between;
-    padding-top: 50px;
-    margin-bottom: 50px;
+   
     
 
     .ordem{
@@ -33,9 +33,8 @@ export const ContainerHeader = styled.div`
         font-weight: bold;
         line-height: 24px;
         width: 332px;
-        height: 20px;
+        height: 60px;
         border: 1px solid ${Cores.darkGray2};
-        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;

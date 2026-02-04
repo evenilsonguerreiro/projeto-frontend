@@ -4,15 +4,14 @@ import { Cores } from "../../Cores";
 export const FooterContainer = styled.div`
     width: 100%;
     background-color: ${Cores.darkGray};
-    padding: 60px 20px;
+   
 
     .barra {
         text-align: center;
         color: white;
-        margin-top: 40px;
 
         p {
-           padding: 40px;
+           padding: 20px;
         }
        
         span {
@@ -29,6 +28,7 @@ export const FooterContainer = styled.div`
 export const FooterContent = styled.div`
     max-width: 1200px;
     width: 100%;
+    padding: 60px 20px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -109,7 +109,8 @@ export const FooterColuna = styled.div`
 
     
     @media (max-width: 768px) {
-        &.coluna-info, &.coluna-categorias {
+        &.coluna-info,
+        &.coluna-categorias {
             width: 45%; 
         }
 

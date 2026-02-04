@@ -5,15 +5,13 @@ import { Cores } from "../../Cores"
 export const ContainerGeral = styled.div`
     width: 100%;
     background-color: ${Cores.lightGray3};
-    padding-top: 250px;
-    
-
-    
+       
 `
 export const Container = styled.div`
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
+    padding: 60px 20px;
 
     .conteudo-principal {
         display: flex;
@@ -162,7 +160,7 @@ export const Container = styled.div`
         gap: 5px;
 
         img {
-          width: 12px; /* estrela branca pequena */
+          width: 12px;
         }
       }
     }
