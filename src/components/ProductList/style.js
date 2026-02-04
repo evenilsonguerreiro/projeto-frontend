@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Cores } from "../../Cores";
 
 export const SectionProdutos = styled.section`
-    max-width: 1440px;
+    max-width: 1200px;
     margin:  auto;
-    padding: 70px 20px;
+    padding: 60px 20px;
    
 
     .header {
@@ -14,11 +14,33 @@ export const SectionProdutos = styled.section`
         margin-bottom: 30px;
 
         h2 {
-             font-size: 24px; color: ${Cores.darkGray2};
+             font-size: 24px;
+              color: ${Cores.darkGray2};
              }
         a { 
-            color: ${Cores.primary}; text-decoration: none; font-weight: bold;
+            color: ${Cores.primary};
+            text-decoration: none;
+            font-weight: bold;
          }
+    }
+
+    @media (max-width: 768px) {
+         .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        h2 {
+             font-size: 16px;
+              color: ${Cores.darkGray2};
+             }
+        a { 
+            color: ${Cores.primary};
+            text-decoration: none;
+            font-weight: bold;
+         }
+    }
     }
 `;
 
@@ -32,7 +54,8 @@ export const GradeProdutos = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    
+
+   
    }
     
 
@@ -66,10 +89,10 @@ export const ProductCard = styled.div`
     }
 
     .categoria {
-         font-size: 15px;
-          color: ${Cores.lightGray};
-           margin-top: 15px;
-            font-weight: bold;
+        font-size: 15px;
+        color: ${Cores.lightGray};
+        margin-top: 15px;
+        font-weight: bold;
          }
     .nome {
         font-size: 24px;
@@ -87,4 +110,38 @@ export const ProductCard = styled.div`
             color: ${Cores.darkGray};
             font-size: 24px; }
     }
+
+    
+        
+    @media (max-width: 768px) {
+        .precos {
+        .preco-antigo { 
+            text-decoration: line-through;
+            color: ${Cores.lightGray};
+            margin-right: 10px; }
+            font-size: 16px;
+        .preco-novo {
+            font-weight: bold;
+            color: ${Cores.darkGray};
+            font-size: 16px; }
+    }
+
+    .nome {
+        font-size: 14px;
+        color: ${Cores.darkGray2};
+        margin: 5px 0;
+        font-weight: 400;
+     }
+
+      .categoria {
+        font-size: 12px;
+        color: ${Cores.lightGray};
+        margin-top: 15px;
+        font-weight: bold;
+         }
+
+
+    }
+
+    
 `;

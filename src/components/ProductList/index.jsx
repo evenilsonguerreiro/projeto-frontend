@@ -17,7 +17,7 @@ const ProductListing = () => {
     return (
         <SectionProdutos>
             <div className="header">
-                <h2>Produtos em alta</h2>
+                <h2>Coleções em destaque</h2>
                 <a href="#">Ver todos &rarr;</a>
             </div>
 

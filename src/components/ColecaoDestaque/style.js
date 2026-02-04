@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { Cores } from "../../Cores";
 
 export const SectionContainer = styled.section`
-    max-width: 1440px;
+    width: 100%;
+    max-width: 1200px;
     margin: 40px auto;
+    overflow-x: hidden; 
     
     h2 {
-        font-size: 24px;
+        font-size: 16px;
         color: ${Cores.darkGray2};
         margin-bottom: 20px;
         margin-left: 15px;
@@ -18,17 +20,14 @@ export const CardContainer = styled.div`
     justify-content: space-between;
     gap: 20px;
     padding: 70px 20px;
+    width: 100%;
+    box-sizing: border-box;
 
-
-    
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
         flex-direction: column;
-    
-
+        align-items: center; 
+        padding: 40px 20px;
     }
-
-    
-    
 `;
 
 export const Card = styled.div`
@@ -38,28 +37,42 @@ export const Card = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    overflow: hidden;
+    overflow: hidden; 
     min-height: 250px;
+    width: 100%;
+    box-sizing: border-box; 
 
+    @media (max-width: 768px) {
+        flex: none; 
+        width: 100%; 
+        min-height: 200px;
 
+        .content {
+            margin-left: 15px; 
+            margin-bottom: 20px;
+            
+            h3 {
+                font-size: 28px;
+                max-width: 150px; 
+                line-height: 1.2;
+            }
+        }
 
-     @media (max-width: 768px) {
-       
-    
-
+        img {
+            width: 45%; 
+            max-width: 160px;
+            height: auto;
+            object-fit: contain;
+        }
     }
 
-   
-
+ 
     .content {
         display: flex;
         flex-direction: column;
         margin-bottom: 35px;
         z-index: 2;
         margin-left: 25px;
-
-       
-        
 
         .discount {
             width: 96px;
@@ -71,13 +84,11 @@ export const Card = styled.div`
             border-radius: 20px;
             font-weight: bold;
             font-size: 14px;
+            margin-top: 15px;
             margin-bottom: 10px;
-            
-          
         }
 
         h3 {
-          
             font-size: 32px;
             font-weight: bold;
             margin-bottom: 20px;
@@ -90,13 +101,9 @@ export const Card = styled.div`
             background-color: ${Cores.white};
             color: ${Cores.primary};
             border: none;
-            padding: 10px 20px;
             border-radius: 8px;
             font-weight: bold;
             cursor: pointer;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: 0.75;
         }
     }
 
@@ -104,12 +111,4 @@ export const Card = styled.div`
         max-width: 400px; 
         height: auto;
     }
-
-
-
-
-
-   
-
-   
 `;

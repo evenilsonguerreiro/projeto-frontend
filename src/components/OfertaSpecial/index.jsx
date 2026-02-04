@@ -8,7 +8,7 @@ const OfertaEspecial = () => {
             <ConteudoOferta>
 
                 <div className="imgOferta">
-                    <img src={tenisoferta} alt="tenis" />
+                   <img src={tenisoferta} alt="tenis" /> 
                 </div>
 
               

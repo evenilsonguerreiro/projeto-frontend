@@ -3,18 +3,26 @@ import { Cores } from "../../Cores";
 
 export const ContainerOferta = styled.div`
     width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: white;
-    
+   
+   
+   
 `
    
 export const ConteudoOferta = styled.div`
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 60px;
+    padding: 60px 20px;
+    gap: 10px;
+    margin: 0 auto;
+    background-color: white;
+   
+   
+   
 
 
     @media (max-width:768px) {
@@ -23,19 +31,16 @@ export const ConteudoOferta = styled.div`
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 10px;
+       
 
         
     }
    
-    
-   
-   
 
     h2 {
-        font-size: 48px;
+        font-size: 28px;
         font-weight:bold;
-        line-height: 50px;
+        line-height: 36px;
         letter-spacing: 1px;
     }
     span {
@@ -45,21 +50,23 @@ export const ConteudoOferta = styled.div`
         line-height: 22px;
     }
     p {
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 14px;
+        line-height: 22px;
         color: ${Cores.lightGray};
     }
 
     .imgOferta {
         flex: 1;
-        width: 573px;
-        height: 330px;
+        max-width: 573px;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .informacoes-oferta {
         flex: 1;
-        width: 589px;
-        height: 341px;
         display: flex;
         flex-direction: column;
         justify-content: center;

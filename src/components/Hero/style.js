@@ -3,22 +3,21 @@ import { Cores } from "../../Cores";
 
 export const HeroContainer = styled.section`
     width: 100%;
-    padding: 60px;
+    padding: 40px 0px;;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ${Cores.lightGray3};
-    
-   
+    background-color: ${Cores.lightGray3}; 
+    overflow-x: hidden
 `;
 
 export const TituloContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: relative;
    
-   
-
      h1 {
         font-size: 64px;
         line-height: 66px;
@@ -31,23 +30,23 @@ export const TituloContainer = styled.div`
 
     img {
         width: 40px;
-        margin-right: 150px;
-        margin-top: 55px;
+        position: absolute;
+        top: 80px;
+        left: 490px;
        
            
     }
    
 `
 
-
 export const HeroContent = styled.div`
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
-    padding: 70px 20px;
+    margin-top: 20px;
+    padding: 60px 20px;
     position: relative;
 
 
@@ -148,15 +147,40 @@ export const HeroImagem = styled.div`
     justify-content: flex-end;
    
 
+
+   
+   
+
     .tenishero {
         width: 100%
     }
 
     @media (max-width:768px) {
+        margin-top: 20px; 
+        width: 100%;
+        max-width: 350px; 
+        position: relative;
+
         .tenishero {
-           
+            width: 90%; 
+        }
+
+        .esquerda {
+            width: 10px; 
+            
+        }
+
+       
+        .esquerda {
+            left: 5px; 
+        }
+
+        .direita {
+            width: 10px;
+            right: 5px;
         }
     }
+    
  
 `;
 

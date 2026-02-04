@@ -5,9 +5,11 @@ import { Cores } from "../../Cores";
 export const HeaderContainer = styled.header`
   width: 100%;
   background-color: ${Cores.white};
-  padding: 20px ;
   position: fixed;
-  z-index: 10;
+  top: 0;
+  left: 0;
+  z-index: 100;
+ 
 
 
   @media (max-width:768px) {
@@ -17,14 +19,16 @@ export const HeaderContainer = styled.header`
 
 
 export const HeaderContent = styled.div`
-    max-width: 1440px;
+    max-width: 1200px;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    padding: 0 20px;
+    padding: 60px 20px;
+    box-sizing: border-box;
    
     
 
@@ -76,7 +80,7 @@ export const HeaderContent = styled.div`
     }
 `;
 export const NavMenu = styled.nav`
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 20px auto ; 
     padding: 0 20px;
 
