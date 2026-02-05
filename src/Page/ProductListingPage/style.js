@@ -142,8 +142,6 @@ export const SideBarE = styled.div`
     flex: 1;
 
 
-   
-
 
     .filtro {
         font-size: 16px;
@@ -156,7 +154,6 @@ export const SideBarE = styled.div`
 
     @media (max-width: 768px) {
         display: none;
-
 
          &.sidebarAberto {
         display: block;
@@ -182,13 +179,16 @@ export const SideBarD = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+   
     
 
 
     @media (max-width: 768px) {
+        width: 335px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 30px;
+        margin: auto;
 
     }
 
@@ -199,8 +199,8 @@ export const SideCard = styled.div`
     
    
     .image-container {
-       width: 163px;
-        height: 179px;
+       width: 292px;
+        height: 321px;
         background-color: ${Cores.white};
         border-radius: 4px;
         padding: 50px 20px;
