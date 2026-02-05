@@ -187,7 +187,7 @@ export const SideBarD = styled.div`
         width: 335px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 10px;
         margin: auto;
 
     }
