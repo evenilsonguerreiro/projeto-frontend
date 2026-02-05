@@ -188,10 +188,7 @@ export const SideBarD = styled.div`
     @media (max-width: 768px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-
-
-        
+        gap: 10px;
 
     }
 

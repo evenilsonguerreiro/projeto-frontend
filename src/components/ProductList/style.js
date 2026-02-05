@@ -53,7 +53,7 @@ export const GradeProdutos = styled.div`
    @media (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 10px;
 
    
    }
@@ -114,6 +114,33 @@ export const ProductCard = styled.div`
     
         
     @media (max-width: 768px) {
+        .image-container {
+            width: 163px;
+            height: 179px;
+            background-color: ${Cores.white};
+            border-radius: 4px;
+            padding: 30px 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+
+        .tag-desconto {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #E7FF86;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        img {
+             
+            width: 100%;
+            height: auto; }
+    }
         .precos {
         .preco-antigo { 
             text-decoration: line-through;
