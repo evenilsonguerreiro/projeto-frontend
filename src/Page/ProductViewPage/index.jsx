@@ -22,23 +22,14 @@ const ProductViewPage = () => {
     return (
         <S.ContainerGeral>
             <S.Container>
-    
                 <div className="trilha">
                     <p><strong>Home</strong> / Produtos / Tênis / Nike / Air Max 270</p>
                 </div>
-
-                
                 <div className="conteudo-principal">
-
-    
                     <div className="galeria">
                         <div className="foto-principal">
-                          
-                                <img className="sDireita" src={arrowleft} alt=""  />
-                            
-                           
-                                <img className="sEsquerda" src={arrowright} alt=""  />
-                    
+                                <img className="sDireita" src={arrowleft} alt="cetinha"  />
+                                <img className="sEsquerda" src={arrowright} alt="cetinha"  />
                             <img src={tenisGaleria} alt="Tênis Nike Air Max" width="100%" />
                         </div>
                         <div className="miniaturas" >

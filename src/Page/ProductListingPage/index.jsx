@@ -1,10 +1,12 @@
 
-import { Chekbox, ContainerHeader, ContainerSecPrincipal, ContainerSection, SideBar, SideBarD, SideBarE, SideCard } from "./style";
+import { Chekbox, ContainerHeader, ContainerSecPrincipal, ContainerSection, Overlay, SideBar, SideBarD, SideBarE, SideCard } from "./style";
 import Layer1 from "../../assets/imagens/Layer1.png";
 import Layer2 from "../../assets/imagens/Layer2.png";
 import Vector from "../../assets/imagens/Vector.png"
-import puma from "../../assets/imagens/puma.webp"
-import adidas from "../../assets/imagens/adidas.jpg"
+import puma from "../../assets/imagens/puma.webp";
+import adidas from "../../assets/imagens/adidas.jpg";
+import filter from "../../assets/imagens/filter.png"
+import { useState } from "react";
 
 
 
@@ -30,6 +32,8 @@ const produtosLista = [
 ];
 const ProductListingPage = () => {
 
+    const [mostrarModal, setMostrarModal] = useState(false)
+
     return (
         <>
             <ContainerSection>
@@ -39,13 +43,16 @@ const ProductListingPage = () => {
                             Resultado para "Tênis" - <span>989.00 produtos</span>
                         </p>
 
-                        <p className="ordem">
-                            Ordenado por: - <span>Mais relevante  <img src={Vector} alt="vector" /></span>
+                       <div className="moblie">
+                         <p className="ordem">
+                            Ordenado por :  -  <span> Mais relevante  <img src={Vector} alt="vector" /></span>
                         </p>
+                        <img onClick={() => setMostrarModal(true)} className="filtro" src={filter} alt="imagem filtro" />
+                       </div>
                     </ContainerHeader>
-
+                    {mostrarModal &&  <Overlay onClick={() => setMostrarModal(false)}/> }
                     <SideBar>
-                        <SideBarE>
+                        <SideBarE  className={mostrarModal? "sidebarAberto" : "sidebarFechado"}>
                                 <h3 className="filtro">Filtrar por</h3>
                                 <hr />
                             <h4 className="marcas">Marka</h4>

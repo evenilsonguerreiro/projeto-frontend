@@ -16,9 +16,9 @@ const Footer = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci porro dolore asperiores quos et est
                     </p>
                     <div className="redes-sociais">
-                        <img src={facebook} alt="" srcset="" />
-                        <img src={instagram} alt="" srcset="" />
-                        <img src={twitter} alt="" srcset="" />
+                        <img src={facebook} alt="faceboock"  />
+                        <img src={instagram} alt="instagram"  />
+                        <img src={twitter} alt="twitter"  />
                     </div>
                 </FooterColuna>
 
