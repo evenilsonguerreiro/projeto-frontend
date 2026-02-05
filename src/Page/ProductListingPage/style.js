@@ -199,8 +199,8 @@ export const SideCard = styled.div`
     
    
     .image-container {
-        width: 292px;
-        height: 321px;
+       width: 163px;
+        height: 179px;
         background-color: ${Cores.white};
         border-radius: 4px;
         padding: 50px 20px;
