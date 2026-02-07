@@ -1,6 +1,7 @@
 
 import tenisoferta from "../../assets/imagens/tenisoferta.png"
 import { ContainerOferta, ConteudoOferta } from "./style";
+import Ellipse from "../../assets/imagens/Ellipse.png"
 
 const OfertaEspecial = () => {
     return (
@@ -8,7 +9,8 @@ const OfertaEspecial = () => {
             <ConteudoOferta>
 
                 <div className="imgOferta">
-                   <img src={tenisoferta} alt="tenis" /> 
+                    <img className="ellipse" src={Ellipse} alt="ellipse"  />
+                   <img className="tenis" src={tenisoferta} alt="tenis" /> 
                 </div>
 
               

@@ -2,23 +2,24 @@ import { HeaderContainer, HeaderContent } from "./style";
 import minicart from "../../assets/imagens/minicart.svg";
 import lupa from "../../assets/imagens/lupa.png"
 import { NavMenu } from "./style";
-import {  NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../Logo";
 import { useState } from "react";
+import Menu from "../../assets/imagens/Menu.png"
 
 const Header = () => {
 
-    const  [valorPesquisado, setValorPesquisado] = useState("");
+    const [valorPesquisado, setValorPesquisado] = useState("");
     const Navegar = useNavigate();
 
     const realizarBusca = () => {
-        if(valorPesquisado.trim()) {
+        if (valorPesquisado.trim()) {
             Navegar(`/products?filter=${valorPesquisado}`)
         }
     }
 
     const detectarEnter = (evento) => {
-        if(evento.key === "Enter") {
+        if (evento.key === "Enter") {
             realizarBusca()
         }
     }
@@ -28,22 +29,23 @@ const Header = () => {
             <HeaderContainer>
                 <HeaderContent>
                     <div className="logo">
-                        <Logo/>
+                        <img className="menu" src={Menu} alt="" />
+                        <Logo />
                     </div>
 
-                    <div className="search-container">
-                        <input type="text"
-                        value={valorPesquisado}
-                        onChange={(e) => setValorPesquisado(e.target.value)}
-                        onKeyDown={detectarEnter}
-                        placeholder="Pesquisar produto..." />
-                        <button onClick={realizarBusca}>
-                            <img src={lupa} alt="" />
+                    <div className="container">
+                        <input className="imput" type="text"
+                            value={valorPesquisado}
+                            onChange={(e) => setValorPesquisado(e.target.value)}
+                            onKeyDown={detectarEnter}
+                            placeholder="Pesquisar produto..." />
+                        <button className="btn-lupa" onClick={realizarBusca}>
+                            <img className="lupa" src={lupa} alt="" />
                         </button>
                     </div>
 
                     <div className="actions">
-                        <a href="#">Cadastre-se</a>
+                        <a className="cadastro" href="#">Cadastre-se</a>
                         <button className="btn-entrar">Entrar</button>
                         <div className="cart">
                             <img src={minicart} alt="" />
@@ -53,19 +55,17 @@ const Header = () => {
                 <NavMenu>
                     <ul>
                         <li>
-                            <NavLink to="/"end>Home</NavLink>
-                            
+                            <NavLink to="/" end>Home</NavLink>
                         </li>
                         <li>
-                             <NavLink to="/produtos">Produtos</NavLink>
+                            <NavLink to="/produtos">Produtos</NavLink>
                         </li>
                         <li>
-                             <NavLink to="/categoria">Categoria</NavLink>
+                            <NavLink to="/categoria">Categoria</NavLink>
                         </li>
                         <li>
-                             <NavLink to="/meus pedidos">Meus Pedidos</NavLink>
+                            <NavLink to="/meus pedidos">Meus Pedidos</NavLink>
                         </li>
-                        
                     </ul>
                 </NavMenu>
             </HeaderContainer>

@@ -13,12 +13,13 @@ const Footer = () => {
                         <img src={logofooter} alt="" />
                     </div>
                     <p className="descricao">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci porro dolore asperiores quos et est
-                    </p>
+                        Aproveite a oportunidade única de adquirir um ícone.
+                         Com acabamento refinado e silhueta clássica.
+                         </p>
                     <div className="redes-sociais">
-                        <img src={facebook} alt="faceboock"  />
-                        <img src={instagram} alt="instagram"  />
-                        <img src={twitter} alt="twitter"  />
+                        <img src={facebook} alt="faceboock" />
+                        <img src={instagram} alt="instagram" />
+                        <img src={twitter} alt="twitter" />
                     </div>
                 </FooterColuna>
 
@@ -53,8 +54,8 @@ const Footer = () => {
                     <h4>Contato</h4>
                     <p className="contatos">
                         Av. Santos Dumont, 1510 - 1
-                         andar - Aldeota, Fortaleza - 
-                         CE, 60150-161 <br />
+                        andar - Aldeota, Fortaleza -
+                        CE, 60150-161 <br />
                         (85) 3051-3411
                     </p>
                 </FooterColuna>

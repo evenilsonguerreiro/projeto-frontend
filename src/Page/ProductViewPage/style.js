@@ -80,7 +80,14 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-content: space-between;
         gap: 10px;
+        margin-top: 10px;
+       
+        img {
+          width: 83px;
+          height: 41px;
+        }
        
        
     }
@@ -89,26 +96,51 @@ export const Container = styled.div`
         background-color: #E2E3FF;
         padding: 15px;
         border-radius: 4px;
+        width:117.81px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }  
     .img-m2 {
-        background-color: #E2E3FF;
+        background-color:#ffe8bc;
         padding: 15px;
         border-radius: 4px;
+        width:117.81px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }  
     .img-m3 {
-        background-color: #E2E3FF;
+        background-color: #ffc0bc;
         padding: 15px;
         border-radius: 4px;
+        width:117.81px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }  
     .img-m4 {
-        background-color: #E2E3FF;
+        background-color: #dec699;
         padding: 15px;
         border-radius: 4px;
+        width:117.81px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .img-m5 {
-        background-color: #E2E3FF;
+        background-color: #e8dfcf;
         padding: 15px;
         border-radius: 4px;
+        width:117.81px;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     } 
     
     .infos {
@@ -294,7 +326,7 @@ export const Container = styled.div`
   }
 
   .relacionados {
-        max-width: 1400px;
+        max-width: 1200px;
         width: 100%;
         margin: auto;
         margin-top: 70px;
@@ -365,9 +397,14 @@ export const Container = styled.div`
          }
     .nome {
         font-size: 24px;
+        width: 283px;
+        height: 38px;
+        line-height: 38px;
         color: ${Cores.darkGray2};
         margin: 5px 0;
-        font-weight: 400; }
+        font-weight: 400;
+       
+       }
     
     .precos {
         .preco-antigo { 
@@ -439,15 +476,12 @@ export const Container = styled.div`
        
     }
     .foto-principal {
-        width: 335px;
+        width: 100%;
         height: 272px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #E2E3FF;
-         border: 1px solid red;
-         
-
     }
 
     .miniaturas {
@@ -455,37 +489,84 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-       
-       
+        gap: 10px; 
     }
 
     .img-m1 {
         background-color: #E2E3FF;
         padding: 15px;
         border-radius: 4px;
-        
-        
+        width: 60.17px;
+        height: 57.51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+         img{
+          width: 42px;
+          height: 24px;
+        }
+         
     }  
     .img-m2 {
-        background-color: #E2E3FF;
+        background-color: #ffe8bc;
         padding: 15px;
         border-radius: 4px;
+        width: 60.17px;
+        height: 57.51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+         img{
+          width: 42px;
+          height: 24px;
+        }
     }  
     .img-m3 {
-        background-color: #E2E3FF;
+        background-color: #ffc0bc;
         padding: 15px;
         border-radius: 4px;
+        width: 60.17px;
+        height: 57.51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+         img{
+          width: 42px;
+          height: 24px;
+        }
     }  
     .img-m4 {
-        background-color: #E2E3FF;
+        background-color: #dec699;
         padding: 15px;
         border-radius: 4px;
+        width: 60.17px;
+        height: 57.51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+         img{
+          width: 42px;
+          height: 24px;
+        }
     }
     .img-m5 {
-        background-color: #E2E3FF;
+        background-color: #e8dfcf;
         padding: 15px;
         border-radius: 4px;
+        width: 60.17px;
+        height: 57.51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+          width: 42px;
+          height: 24px;
+        }
     } 
     
     .infos {
@@ -520,6 +601,7 @@ export const Container = styled.div`
       .stars {
         display: flex;
         gap: 2px;
+        
         img {
           width: 14px;
         }
@@ -548,6 +630,7 @@ export const Container = styled.div`
       align-items: baseline;
       gap: 10px;
 
+      
       small {
         font-size: 16px;
         color: ${Cores.darkGray};
@@ -671,18 +754,19 @@ export const Container = styled.div`
   }
 
   .relacionados {
-        max-width: 1400px;
+        max-width: 1200px;
         width: 100%;
         margin: auto;
-        margin-top: 70px;
+        margin-top: 30px;
 
         a {
             color: ${Cores.primary};
+            font-size: 14px;
         }
         h3 {
-            font-size: 24px;
+            font-size: 16px;
             font-weight: bold;
-            line-height:38px;
+            line-height:24px;
             color: ${Cores.darkGray2};
         }
 
@@ -693,7 +777,7 @@ export const Container = styled.div`
             justify-content: center;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 50px;
+           
         }
 
         
@@ -701,9 +785,11 @@ export const Container = styled.div`
     
     .grid-relacionados {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        margin-bottom: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+       
+       
+       
 
     
     .image-container {
@@ -742,9 +828,12 @@ export const Container = styled.div`
          }
     .nome {
         font-size: 24px;
+        line-height: 38px;
         color: ${Cores.darkGray2};
         margin: 5px 0;
-        font-weight: 400; }
+        font-weight: 400;
+        
+       }
     
     .precos {
         .preco-antigo { 
@@ -758,5 +847,76 @@ export const Container = styled.div`
     }
 }
       
+}
+
+
+
+@media (max-width: 768px) {
+  .grid-relacionados {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+       
+
+    
+    .image-container {
+        width: 163px;
+        height:179.19px;
+        background-color: ${Cores.white};
+        border-radius: 4px;
+        padding: 30px 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+
+       
+       
+
+        .tag-desconto {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #E7FF86;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        img {
+             
+            width: 100%;
+            height: auto; }
     }
+
+    .categoria {
+        font-size: 12px;
+        color: ${Cores.lightGray};
+        font-weight: bold;
+        line-height: 24px;
+         }
+    .nome {
+        font-size: 12px;
+        width: 149px;
+        height: 22px;
+        color: ${Cores.darkGray2};
+        margin: 5px 0;
+        font-weight: 400;
+        line-height: 22px;
+       }
+    
+    .precos {
+        .preco-antigo { 
+            text-decoration: line-through;
+            color: ${Cores.lightGray};
+            margin-right: 10px; }
+        .preco-novo {
+            font-weight: bold;
+            color: ${Cores.darkGray};
+            font-size: 16px; }
+    }
+}
+    
+}
 `

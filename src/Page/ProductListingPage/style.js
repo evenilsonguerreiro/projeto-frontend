@@ -13,9 +13,7 @@ export const ContainerSecPrincipal = styled.div`
     margin: 0 auto;
     gap: 20px;
     padding: 60px 20px;
-
-   
-   
+ 
 `
 
 export const ContainerHeader = styled.div`
@@ -196,8 +194,7 @@ export const SideBarD = styled.div`
       
 `
 export const SideCard = styled.div`
-    
-   
+
     .image-container {
        width: 292px;
         height: 321px;

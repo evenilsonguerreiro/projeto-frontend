@@ -3,7 +3,7 @@ import { Cores } from "../../Cores";
 
 export const HeroContainer = styled.section`
     width: 100%;
-    padding: 40px 0px;;
+    padding: 40px 20px;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +45,6 @@ export const HeroContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
     padding: 60px 20px;
     position: relative;
 
@@ -53,20 +52,21 @@ export const HeroContent = styled.div`
         .esquerda {
             position: absolute;
             top: 50%;
-            left: 50%;
+            left: 51%;
             cursor: pointer;
         }
 
         .direita {
+            position: absolute;
+            top: 50%;
+            left: 96%;
             cursor: pointer;
+
         }
     
-    
-
 
     @media (max-width: 768px) {
     flex-direction:column-reverse;
-    margin-top: 40px;
     gap: 32px;
   }
 

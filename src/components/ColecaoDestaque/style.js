@@ -8,10 +8,30 @@ export const SectionContainer = styled.section`
     overflow-x: hidden; 
     
     h2 {
-        font-size: 16px;
+        font-size: 24px;
+        line-height: 38px;
+        letter-spacing: 0.75;
+        font-weight: 700;
         color: ${Cores.darkGray2};
-        margin-bottom: 20px;
         margin-left: 15px;
+    }
+
+
+    @media (max-width: 768px) {
+         width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    overflow-x: hidden; 
+    
+    h2 {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.75;
+        font-weight: 700;
+        color: ${Cores.darkGray2};
+        margin-left: 15px;
+    }
+
     }
 `;
 
@@ -19,7 +39,7 @@ export const CardContainer = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 70px 20px;
+    padding: 40px 20px;
     width: 100%;
     box-sizing: border-box;
 
@@ -42,31 +62,7 @@ export const Card = styled.div`
     width: 100%;
     box-sizing: border-box; 
 
-    @media (max-width: 768px) {
-        flex: none; 
-        width: 100%; 
-        min-height: 200px;
-
-        .content {
-            margin-left: 15px; 
-            margin-bottom: 20px;
-            
-            h3 {
-                font-size: 28px;
-                max-width: 150px; 
-                line-height: 1.2;
-            }
-        }
-
-        img {
-            width: 45%; 
-            max-width: 160px;
-            height: auto;
-            object-fit: contain;
-        }
-    }
-
- 
+   
     .content {
         display: flex;
         flex-direction: column;
@@ -89,6 +85,10 @@ export const Card = styled.div`
         }
 
         h3 {
+            width: 172px;
+            height: 72px;
+            line-height: 36px;
+            letter-spacing:1px;
             font-size: 32px;
             font-weight: bold;
             margin-bottom: 20px;
@@ -110,5 +110,35 @@ export const Card = styled.div`
     img {
         max-width: 400px; 
         height: auto;
+    }
+
+     @media (max-width: 768px) {
+        flex: none; 
+        width: 100%; 
+        min-height: 200px;
+
+        .content {
+            margin-left: 15px; 
+            margin-bottom: 20px;
+            
+            h3 {
+                width: 194px;
+                height: 72px;
+                font-size: 24px;
+                line-height:36px;
+                letter-spacing: 2px;
+                font-weight: bold;
+                max-width: 150px;
+               
+               
+            }
+        }
+
+        img {
+            width: 45%; 
+            max-width: 160px;
+            height: auto;
+            object-fit: contain;
+        }
     }
 `;

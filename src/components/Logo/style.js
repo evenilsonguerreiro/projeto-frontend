@@ -11,4 +11,6 @@ export const LogoContainer = styled.div`
         height: 44px;
         object-fit: cover;
     }
+
+    
 `

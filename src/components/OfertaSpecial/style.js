@@ -17,6 +17,7 @@ export const ConteudoOferta = styled.div`
     gap: 60px;
     margin: 0 auto;
     background-color: white;
+    margin-bottom: 100px;
 
     
     h2 {
@@ -45,9 +46,21 @@ export const ConteudoOferta = styled.div`
         flex: 1;
         max-width: 573px;
         height: auto;
-        img {
-            width: 100%;
-            height: auto;
+        position: relative;
+
+        .tenis {
+            width: 573px;
+            height: 330px;
+            position:absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60px;
+            z-index: 2;  
+        }
+
+        .ellipse {
+            width: 466px;
+            margin-left: 30px;
         }
     }
 
@@ -97,6 +110,21 @@ export const ConteudoOferta = styled.div`
         .imgOferta {
             width: 100%;
             max-width: 100%;
+
+            .tenis {
+            width: 301px;
+            height: 173px;
+            position:absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60px;
+            z-index: 2;  
+        }
+
+        .ellipse {
+            width: 281px;
+            margin-left: 30px;
+        }
         }
 
         .informacoes-oferta {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Cores } from "../../Cores"; 
+import { Cores } from "../../Cores";
 
 
 export const HeaderContainer = styled.header`
@@ -10,11 +10,6 @@ export const HeaderContainer = styled.header`
   left: 0;
   z-index: 100;
  
-
-
-  @media (max-width:768px) {
-    padding: 0;
-  }
 `;
 
 
@@ -29,21 +24,38 @@ export const HeaderContent = styled.div`
     gap: 30px;
     padding: 60px 20px;
     box-sizing: border-box;
-   
+
     
 
+    .menu {
+        display: none;
+    }
+
    
-    .search-container {
+    .container {
         flex: 1; 
         display: flex;
         background-color: ${Cores.lightGray3};
         border-radius: 8px;
-        padding: 10px 15px;  
+        padding: 10px 15px;
+
+        button {
+            background-color: transparent;
+            border: none;
+        }
+        
 
         img {
             width: 24px;
             height: 24px;
             
+        }
+
+        .lupa {
+            
+                width: 20px;
+                height: 20px;
+         
         }
 
         input {
@@ -52,6 +64,7 @@ export const HeaderContent = styled.div`
             width: 100%;
             outline: none;
             font-size: 16px;
+           
         }
 
        
@@ -61,6 +74,7 @@ export const HeaderContent = styled.div`
         display: flex;
         align-items: center;
         gap: 20px;
+        
 
         a {
             color: ${Cores.darkGray2};
@@ -78,6 +92,127 @@ export const HeaderContent = styled.div`
             cursor: pointer;
         }
     }
+
+    @media (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    position: relative;
+   
+    .logo {
+        display: flex;
+        justify-content: center;
+       
+      
+       
+        div { 
+            img {
+                width: 138px; 
+                height: 24px;
+                 margin-left: 65px;
+                
+               
+               
+            }
+        }
+    }
+
+    
+   
+    .menu {
+        display: block;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+       
+        
+    }
+
+   
+    .container {
+        flex: 1; 
+        display: flex;
+        border-radius: 8px;
+        padding: 10px 15px; 
+        background-color: transparent;
+        position: relative;
+
+        button {
+            background-color: transparent;
+            border: none;
+           
+        }
+
+        
+       
+        .lupa {
+            width: 20px;
+            height: 20px;
+            border: none; 
+            position: absolute;
+            top: 0px;
+            left:30px;
+           
+        }
+
+        input {
+            border: none;
+            background: transparent;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            display: none;
+           
+        }
+
+       
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+
+
+        .cadastro {
+            display: none;
+        }
+
+        .imput {
+             display: none;
+        }
+       
+
+        a {
+            color: ${Cores.darkGray2};
+            text-decoration: underline;
+        }
+
+        .btn-entrar {
+            background-color: ${Cores.primary};
+            color: ${Cores.white};
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+            width: 140px;
+            height: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+       
+    }
+ 
+    }
+
+
+
+
+
+
 `;
 export const NavMenu = styled.nav`
     max-width: 1200px;
@@ -121,5 +256,53 @@ export const NavMenu = styled.nav`
                 }
             }
         }
+    }
+
+
+    @media (max-width: 768px) {
+        margin: 20px auto ; 
+        padding: 0 20px;
+        
+
+    ul {
+        display: flex;
+        gap: 30px; 
+        list-style: none;
+
+        li a {
+            font-size: 16px;
+            color: ${Cores.darkGray2};
+            font-weight: 400;
+            text-decoration: none;
+            transition: 0.3s;
+            position: relative;
+            text-decoration: none;
+            display: none;
+
+            
+
+            &:hover {
+                color: ${Cores.primary};
+            }
+
+            
+            &.active {
+                color: ${Cores.primary};
+                font-weight: bold;
+                
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: ${Cores.primary};
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                }
+            }
+        }
+    }
+ 
     }
 `;

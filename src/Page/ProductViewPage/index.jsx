@@ -132,9 +132,7 @@ const ProductViewPage = () => {
                             <span className="preco-novo">${produto.precoDesconto}</span>
                         </div>
                        </div> 
-                        ))}
-                       
-                       
+                        ))}   
                     </div>
                     </div>
                 </div>

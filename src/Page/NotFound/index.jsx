@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { NotFoundContainer } from "./style";
 
+
 const NotFound = () => {
     return ( 
         <>
