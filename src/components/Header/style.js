@@ -219,6 +219,8 @@ export const NavMenu = styled.nav`
     margin: 20px auto ; 
     padding: 0 20px;
 
+   
+
     ul {
         display: flex;
         gap: 30px; 
@@ -262,6 +264,11 @@ export const NavMenu = styled.nav`
     @media (max-width: 768px) {
         margin: 20px auto ; 
         padding: 0 20px;
+         display: none;
+
+         &.aberto {
+            display: flex; 
+        }
         
 
     ul {
@@ -269,15 +276,18 @@ export const NavMenu = styled.nav`
         gap: 30px; 
         list-style: none;
 
+        
+
         li a {
-            font-size: 16px;
+            font-size: 14px;
             color: ${Cores.darkGray2};
             font-weight: 400;
             text-decoration: none;
             transition: 0.3s;
             position: relative;
             text-decoration: none;
-            display: none;
+            display: block;
+           
 
             
 

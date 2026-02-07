@@ -8,10 +8,13 @@ import homeslide1 from "../../assets/imagens/homeslide1.jpeg"
 import homeslide2 from "../../assets/imagens/homeslide2.jpeg"
 import homeslide3 from "../../assets/imagens/homeslide3.jpeg"
 import homeslide4 from "../../assets/imagens/homeslide4.jpeg"
+import homeslide5 from "../../assets/imagens/homeslide5.jpeg"
+import homeslide6 from "../../assets/imagens/homeslide6.jpeg"
+import homeslide7 from "../../assets/imagens/homeslide7.jpeg"
 
 
 
-const imagensSlide = [homeslide4, homeslide1, homeslide2, homeslide3]; 
+const imagensSlide = [homeslide4, homeslide1, homeslide2, homeslide3, homeslide5,homeslide6,homeslide7]; 
 
 const Hero = () => {
     const [atual, setAtual] = useState(0);

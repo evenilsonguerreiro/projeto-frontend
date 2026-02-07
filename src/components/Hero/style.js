@@ -147,10 +147,6 @@ export const HeroImagem = styled.div`
     justify-content: flex-end;
    
 
-
-   
-   
-
     .tenishero {
         width: 100%
     }
@@ -162,7 +158,7 @@ export const HeroImagem = styled.div`
         position: relative;
 
         .tenishero {
-            width: 90%; 
+            width: 100%; 
         }
 
         .esquerda {

@@ -8,7 +8,7 @@ import { useState } from "react";
 import Menu from "../../assets/imagens/Menu.png"
 
 const Header = () => {
-
+    const [menuAberto, setMenuAberto] = useState(false)
     const [valorPesquisado, setValorPesquisado] = useState("");
     const Navegar = useNavigate();
 
@@ -29,7 +29,7 @@ const Header = () => {
             <HeaderContainer>
                 <HeaderContent>
                     <div className="logo">
-                        <img className="menu" src={Menu} alt="" />
+                        <img onClick={() => setMenuAberto(!menuAberto)} className="menu" src={Menu} alt="menu" />
                         <Logo />
                     </div>
 
@@ -52,18 +52,18 @@ const Header = () => {
                         </div>
                     </div>
                 </HeaderContent>
-                <NavMenu>
+                <NavMenu className={menuAberto ? "aberto" : ""}>
                     <ul>
-                        <li>
+                        <li onClick={() => setMenuAberto(false)}>
                             <NavLink to="/" end>Home</NavLink>
                         </li>
-                        <li>
+                        <li  onClick={() => setMenuAberto(false)}>
                             <NavLink to="/produtos">Produtos</NavLink>
                         </li>
-                        <li>
+                        <li  onClick={() => setMenuAberto(false)}>
                             <NavLink to="/categoria">Categoria</NavLink>
                         </li>
-                        <li>
+                        <li  onClick={() => setMenuAberto(false)}>
                             <NavLink to="/meus pedidos">Meus Pedidos</NavLink>
                         </li>
                     </ul>
