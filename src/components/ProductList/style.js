@@ -5,6 +5,7 @@ export const SectionProdutos = styled.section`
   max-width: 1200px;
   margin: auto;
   padding: 60px 20px;
+ 
 
   .header {
     display: flex;
@@ -37,7 +38,10 @@ export const SectionProdutos = styled.section`
     .header {
       width: 335px;
       display: flex;
-      padding: 0 10px;
+      margin: auto;
+      padding: 0 14px;
+      margin-bottom: 10px;
+      
       h2 {
         font-size: 16px;
         line-height: 24px;
@@ -54,12 +58,17 @@ export const GradeProdutos = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+   
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 335px;
+    margin: auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    padding: 0 10px;
     justify-items: center;
+    
+   
   
    
   }

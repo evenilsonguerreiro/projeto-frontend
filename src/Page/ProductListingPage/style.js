@@ -12,8 +12,6 @@ export const ContainerSecPrincipal = styled.div`
   margin: 0 auto;
   gap: 20px;
   padding: 60px 20px;
-
-
 `;
 
 export const ContainerHeader = styled.div`
@@ -60,12 +58,13 @@ export const ContainerHeader = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 335;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
+    padding: 0 10px;
 
     .filtro {
       display: block;
@@ -75,7 +74,7 @@ export const ContainerHeader = styled.div`
 
     .moblie {
       display: flex;
-      gap: 10px;
+      gap: 5px;
     }
 
     .ordem {
@@ -114,8 +113,21 @@ export const ContainerHeader = styled.div`
 `;
 export const SideBar = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 10px;
+ 
 
+  .image-container {
+    width: 163px;
+    height: 179.19px;
+    margin: auto;
+    background-color: ${Cores.white};
+    border-radius: 4px;
+    padding: 30px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  }
   .marcas {
     font-size: 14px;
     font-weight: 700;
@@ -129,8 +141,7 @@ export const SideBarE = styled.div`
   height: 720px;
   background-color: white;
   border-radius: 4px;
-  padding: 10px;
- 
+  padding: 0 10px;
 
   .filtro {
     font-size: 16px;
@@ -163,21 +174,46 @@ export const SideBarE = styled.div`
   }
 `;
 export const SideBarD = styled.div`
+  width: 904px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   flex: 1;
+ 
+
+  .image-container {
+    width: 292px;
+    height: 321px;
+    background-color: ${Cores.white};
+    border-radius: 4px;
+    padding: 30px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 335px;
     display: grid;
-    & > :nth-child(n+9) {
-      display: none;
-    }
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    
+   
+    
 
+      .image-container {
+    width: 163px;
+    height: 179.19px;
+    background-color: ${Cores.white};
+    border-radius: 4px;
+    padding: 30px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   }
+    }
+   
 `;
 
 export const Chekbox = styled.div`

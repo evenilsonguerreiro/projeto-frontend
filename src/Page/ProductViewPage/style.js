@@ -10,6 +10,7 @@ export const Container = styled.div`
   width: 100%;
   margin: auto;
   padding: 60px 20px;
+  
 
   .conteudo-principal {
     display: flex;
@@ -315,6 +316,7 @@ export const Container = styled.div`
     width: 100%;
     margin: auto;
     margin-top: 70px;
+    
 
     a {
       color: ${Cores.primary};
@@ -731,7 +733,7 @@ export const Container = styled.div`
           display: none;
         }
         gap: 10px;
-        border: 1px solid red;
+       
 
         .image-container {
           width: 100%;

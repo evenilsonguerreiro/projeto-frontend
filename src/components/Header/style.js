@@ -175,6 +175,7 @@ export const NavMenu = styled.nav`
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
+  
 
   ul {
     display: flex;
@@ -216,6 +217,7 @@ export const NavMenu = styled.nav`
     margin: 20px auto;
     padding: 0 20px;
     display: none;
+   
 
     &.aberto {
       display: flex;
