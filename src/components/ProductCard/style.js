@@ -78,7 +78,7 @@ export const CardContainer = styled.div`
     }
 
     .categoria {
-      width: 35px;
+     
       font-size: 12px;
       line-height: 24px;
       letter-spacing: 0.75px;
