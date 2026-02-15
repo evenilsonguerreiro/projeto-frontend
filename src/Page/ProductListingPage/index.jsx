@@ -12,6 +12,8 @@ import {
 import Layer1 from "../../assets/imagens/Layer1.png";
 import Vector from "../../assets/imagens/Vector.png"
 import filter from "../../assets/imagens/filter.png";
+import Delete from "../../assets/imagens/Delete.png"
+
 import { useState } from "react";
 import ProductCard from "../../components/ProductCard";
 
@@ -141,6 +143,7 @@ const produtosLista = [
 ];
 const ProductListingPage = () => {
   const [mostrarModal, setMostrarModal] = useState(false);
+ 
 
   return (
     <>
@@ -173,6 +176,7 @@ const ProductListingPage = () => {
               className={mostrarModal ? "sidebarAberto" : "sidebarFechado"}
             >
               <h3 className="filtro">Filtrar por</h3>
+              <img onClick={() => setMostrarModal(false)} className="delete" src={Delete} alt="" />
               <hr />
               <h4 className="marcas">Marka</h4>
               <Chekbox>

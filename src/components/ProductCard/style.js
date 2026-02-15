@@ -3,6 +3,7 @@ import { Cores } from "../../Cores";
 
 export const CardContainer = styled.div`
     box-sizing: border-box;
+    
    
      .image-container {
        background-color: ${Cores.white};
@@ -63,13 +64,14 @@ export const CardContainer = styled.div`
      }
 
      @media (max-width: 768px) {
-     
-
+       
     .image-container {
       width: 147px;
       height: 161.6px;
       padding: 20px;
       box-sizing: border-box;
+     
+    
 
       img {
         width: 100%;

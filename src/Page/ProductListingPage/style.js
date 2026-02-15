@@ -127,6 +127,7 @@ export const SideBar = styled.div`
     display: flex;
     justify-content: center;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+   
   }
   .marcas {
     font-size: 14px;
@@ -143,6 +144,10 @@ export const SideBarE = styled.div`
   border-radius: 4px;
   padding: 0 10px;
 
+  .delete {
+    display: none;
+  }
+
   .filtro {
     font-size: 16px;
     font-weight: bold;
@@ -154,6 +159,16 @@ export const SideBarE = styled.div`
 
   @media (max-width: 768px) {
     display: none;
+    position: relative;
+
+    .delete {
+    display: block;
+    position: absolute;
+    top: 35px;
+    margin-left: 250px;
+    cursor: pointer;
+  }
+
 
     &.sidebarAberto {
       display: block;
@@ -191,22 +206,21 @@ export const SideBarD = styled.div`
     display: flex;
     justify-content: center;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    
   }
 
   @media (max-width: 768px) {
-    width: 335px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
    
     
-
       .image-container {
     width: 163px;
     height: 179.19px;
     background-color: ${Cores.white};
     border-radius: 4px;
-    padding: 30px 20px;
+    padding: 30px 10px;
     position: relative;
     display: flex;
     justify-content: center;
