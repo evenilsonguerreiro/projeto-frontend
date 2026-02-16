@@ -172,10 +172,10 @@ export const HeaderContent = styled.div`
   }
 `;
 export const NavMenu = styled.nav`
+  /* Mantendo seu Desktop intacto */
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
-  
 
   ul {
     display: flex;
@@ -189,7 +189,6 @@ export const NavMenu = styled.nav`
       text-decoration: none;
       transition: 0.3s;
       position: relative;
-      text-decoration: none;
 
       &:hover {
         color: ${Cores.primary};
@@ -198,7 +197,6 @@ export const NavMenu = styled.nav`
       &.active {
         color: ${Cores.primary};
         font-weight: bold;
-
         &::after {
           content: "";
           display: block;
@@ -214,49 +212,67 @@ export const NavMenu = styled.nav`
   }
 
   @media (max-width: 768px) {
-    margin: 20px auto;
-    padding: 0 20px;
     display: none;
-   
+    position: fixed;
+    top: 118px;
+    left: 0;
+    width: 308px;
+    height: 450px;
+    background-color: ${Cores.white};
+    margin: 0;
+    padding: 30px;
+    z-index: 1000;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
 
     &.aberto {
       display: flex;
+      flex-direction: column;
     }
 
     ul {
       display: flex;
-      gap: 30px;
-      list-style: none;
+      flex-direction: column;
+      gap: 25px;
+      width: 100%;
+      padding: 0;
+      margin-top: 40px;
 
       li a {
-        font-size: 14px;
-        color: ${Cores.darkGray2};
-        font-weight: 400;
-        text-decoration: none;
-        transition: 0.3s;
-        position: relative;
-        text-decoration: none;
+        font-size: 16px;
+        width: fit-content;
         display: block;
 
-        &:hover {
-          color: ${Cores.primary};
+        &.active::after {
+          width: 100%;
         }
+      }
+    }
 
-        &.active {
-          color: ${Cores.primary};
-          font-weight: bold;
+    .actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid ${Cores.lightGray2};
+      width: 100%;
 
-          &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: ${Cores.primary};
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-          }
-        }
+      .btn-entrar {
+        display: block;
+        width: 100%;
+        height: 48px;
+        background-color: ${Cores.primary};
+        color: ${Cores.white};
+        border-radius: 8px;
+        font-weight: bold;
+        border: none;
+      }
+
+      .cadastro {
+        display: block;
+        color: ${Cores.darkGray2};
+        text-decoration: underline;
       }
     }
   }

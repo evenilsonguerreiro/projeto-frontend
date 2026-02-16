@@ -79,6 +79,15 @@ const Header = () => {
               <NavLink to="/meus pedidos">Meus Pedidos</NavLink>
             </li>
           </ul>
+
+          <div className="actions">
+            <a className="cadastro" href="#">
+              Cadastre-se
+            </a>
+            <button className="btn-entrar">Entrar</button>
+            <div className="cart">
+            </div>
+          </div>
         </NavMenu>
       </HeaderContainer>
     </>
