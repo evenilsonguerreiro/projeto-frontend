@@ -172,10 +172,17 @@ export const HeaderContent = styled.div`
   }
 `;
 export const NavMenu = styled.nav`
-  /* Mantendo seu Desktop intacto */
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
+
+  .btn-entrar {
+    display: none;
+  }
+
+  .cadastro {
+    display: none;
+  }
 
   ul {
     display: flex;
