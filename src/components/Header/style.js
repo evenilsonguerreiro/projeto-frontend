@@ -224,7 +224,7 @@ export const NavMenu = styled.nav`
     top: 118px;
     left: 0;
     width: 308px;
-    height: 450px;
+    height: 600px;
     background-color: ${Cores.white};
     margin: 0;
     padding: 30px;
