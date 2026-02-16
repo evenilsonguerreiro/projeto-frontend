@@ -212,6 +212,7 @@ export const SideBarD = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(2, 1fr);
    
     
@@ -225,6 +226,9 @@ export const SideBarD = styled.div`
     display: flex;
     justify-content: center;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+
+    
+    
   }
     }
    

@@ -34,6 +34,7 @@ export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 40px;
+ 
 
   @media (max-width: 768px) {
     justify-content: flex-start;
