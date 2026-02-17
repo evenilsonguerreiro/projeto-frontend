@@ -1,16 +1,37 @@
-# React + Vite
+# 👟 Digital Store 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o projeto final do módulo de Front-end, focado em criar uma experiência de e-commerce moderna, responsiva e performática para a **Digital Store**.
 
-Currently, two official plugins are available:
+## 👤 Desenvolvedor: Evenilson
+Desenvolvedor Front-end focado em criar interfaces intuitivas e otimizadas. Durante este projeto, foquei em aplicar as melhores práticas de React e Styled Components para garantir um código limpo e escalável.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Sobre o Projeto
+O projeto consiste em uma loja virtual completa com foco na experiência do usuário (UX) em dispositivos móveis e desktop.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Principais Funcionalidades:
+* **Responsividade Total:** Layout adaptável para Mobile, Tablet e Desktop.
+* **Menu Lateral (Drawer):** Menu mobile exclusivo com 308px de largura, seguindo fielmente o design do Figma.
+* **Scroll Horizontal de Categorias:** Implementação de navegação por toque para fácil acesso em celulares.
+* **Performance com Suspense:** Utilização de `React.lazy` e `Suspense` para carregamento sob demanda (Code Splitting), tornando o site muito mais rápido.
+* **Styled Components:** Uso de CSS-in-JS para um design modular e dinâmico.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias Utilizadas
+* **React.js**
+* **Styled Components** (Estilização)
+* **React Router Dom** (Navegação)
+* **Lucide Icons / Imagens Customizadas**
+* **Vercel** (Deploy e Hospedagem)
+
+---
+
+## 🏁 Como rodar o projeto localmente
+
+Siga os passos abaixo para testar o projeto na sua máquina:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone (https://github.com/evenilsonguerreiro/projeto-frontend)

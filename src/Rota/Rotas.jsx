@@ -1,29 +1,29 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "../Page/HomePage";
-import ProductListingPage from "../Page/ProductListingPage";
-import ProductViewPage from "../Page/ProductViewPage";
 import Layout from "../components/Layout";
-import NotFound from "../Page/NotFound";
+import { Suspense,lazy } from "react";
 
+const HomePage = lazy(() => import("../Page/HomePage"));
+const ProductListingPage = lazy(() => import("../Page/ProductListingPage"));
+const ProductViewPage = lazy(() => import("../Page/ProductViewPage"));
+const NotFound = lazy(() => import("../Page/NotFound"));
 
 const Rotas = () => {
-    return (
-        <>
-            <BrowserRouter>
-                
-                <Routes>
-                    <Route path="/" element={<Layout/>}>
-                        <Route path="/" element={<HomePage />} />
-                        <Route path="/produtos" element={<ProductListingPage />} />
-                        <Route path="/categoria" element={<ProductViewPage />} />   
-                    </Route>
-                    <Route path="*" element={<NotFound/>}/>
-                   
-                </Routes>
-               
-            </BrowserRouter>
-        </>
-    );
-}
+  return (
+    <>
+      <BrowserRouter>
+        <Suspense fallback={<div>Carregando Página....</div>}>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/produtos" element={<ProductListingPage />} />
+              <Route path="/categoria" element={<ProductViewPage />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </>
+  );
+};
 
 export default Rotas;
